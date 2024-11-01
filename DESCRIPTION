@@ -6,7 +6,7 @@ Author: Sanjaya J Shetty
 Maintainer: Sanjaya J Shetty <shettysanjaya01@gmail.com>
 Description: This package provides a user-friendly API wrapper around Amazon Cognito services, simplifying user authentication, registration, password management, and more. 
     It enables seamless integration with Amazon Cognito for R developers, making it easier to manage user identities and authentication flows.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
