@@ -4,7 +4,6 @@
 #'
 #' @param email The email address to be validated.
 #' @return TRUE if the email is valid, otherwise an error is thrown.
-#' @export
 is_valid_email <- function(email) {
   email_pattern <- "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}$"
 
@@ -19,7 +18,6 @@ is_valid_email <- function(email) {
 #'
 #' @param token The access token to be validated.
 #' @return TRUE if the token is valid, otherwise an error is thrown.
-#' @export
 is_valid_token <- function(token) {
   # I don't trust this completely, might fail
   string_pattern <- "^eyJ[[:alnum:]=_-]+\\.[[:alnum:]=_-]+\\.[[:alnum:]=_-]+$"
@@ -34,7 +32,6 @@ is_valid_token <- function(token) {
 #' @param cognito_client The Cognito client.
 #' @param userpool A character string representing the user pool ID.
 #' @return A list containing usernames and email addresses.
-#' @export
 get_user_list_from_cognito <- function(cognito_client, userpool) {
 
   user_info_from_cognito <- cognito_client$list_users(UserPoolId =
