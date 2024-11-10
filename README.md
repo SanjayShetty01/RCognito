@@ -168,6 +168,25 @@ confirm_forgot_password(
 - `confirmation_code`: The confirmation code sent to the user.
 - `new_password`: The new password the user wants to set.
 
+
+## Use Cases for `RCognito`
+
+
+### 1. **Authentication for Shiny Applications**
+`RCognito` allows you to integrate AWS Cognito for user authentication in Shiny applications. It enables secure user sign-up, sign-in, password management and session management, making restricting access to sensitive features based on authenticated user roles easier.
+
+---
+
+### 2. **Securing Plumber API Endpoints**
+`RCognito` can be used to secure API endpoints in a Plumber service by validating AWS Cognito authentication tokens. This ensures that only authorized users can access specific API endpoints and perform actions that require authentication.
+
+---
+
+### 3. **Integrating Cognito Authentication with R Scripts in Backend**
+When using R scripts for backend operations (e.g., data analysis, API interaction), `RCognito` facilitates secure authentication by verifying user credentials before allowing access to sensitive tasks or data.
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
