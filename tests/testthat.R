@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(Rcognito)
+library(RCognito)
 
-test_check("Rcognito")
+testthat::test_check("RCognito")
