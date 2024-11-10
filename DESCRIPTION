@@ -10,7 +10,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
-Imports: paws, mockery
+Imports: paws
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    mockery
 Config/testthat/edition: 3
