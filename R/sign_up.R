@@ -11,7 +11,7 @@
 #' @return A list with sign-up confirmation details if successful; throws an error otherwise.
 #' @export
 
-sign_up <- function(client_id, email, username, password, ...) {
+sign_up_user <- function(client_id, email, username, password, ...) {
 
   user_attributes <- list(
     list(Name = "email", Value = email),

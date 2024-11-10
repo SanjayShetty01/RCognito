@@ -12,7 +12,7 @@
 #' @return Nothing (displays a message on success or raises an error if it fails).
 #' @export
 
-confirm_sign_up <- function(client_id,
+confirm_sign_up_user <- function(client_id,
                             userpool,
                             username,
                             verification_code) {
@@ -24,8 +24,8 @@ confirm_sign_up <- function(client_id,
                                                             userpool)
 
     base::stopifnot(
-      "Duplicate username, Please enter another username" =
-        !username %in% users_info_from_cognito$usernames
+      "User not found, Please enter correct username" =
+        username %in% users_info_from_cognito$usernames
     )
 
     cognito$confirm_sign_up(
