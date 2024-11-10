@@ -10,7 +10,8 @@
 #' @return A list with user information and tokens if successful; throws an error otherwise.
 #' @export
 
-sign_in <- function(client_id, username, password, authflow = "USER_PASSWORD_AUTH") {
+sign_in <- function(client_id, username, password,
+                    authflow = "USER_PASSWORD_AUTH") {
   tryCatch({
 
     cognito <- paws::cognitoidentityprovider()

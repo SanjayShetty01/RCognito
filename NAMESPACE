@@ -2,8 +2,8 @@
 
 export(change_password)
 export(confirm_forgot_password)
-export(confirm_sign_up)
+export(confirm_sign_up_user)
 export(forgot_password)
 export(sign_in)
-export(sign_up)
+export(sign_up_user)
 import(paws)
