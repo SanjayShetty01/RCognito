@@ -3,5 +3,5 @@
 .RData
 .Ruserdata
 .Renviron
-Rcognito.Rcheck/
+RCognito.Rcheck/
 *.tar.gz
