@@ -7,8 +7,7 @@ Authors@R: person(given = c("Sanjaya", "J"),
                   role = c("aut", "cre"),
                   email = "shettysanjaya01@gmail.com")
 Maintainer: Sanjaya J Shetty <shettysanjaya01@gmail.com>
-Description: Simplifies integration with Amazon Cognito for R developers, 
-enabling easy management of user authentication, registration, and password flows.
+Description: Simplifies integration with Amazon Cognito for R developers, enabling easy management of user authentication, registration, and password flows.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
