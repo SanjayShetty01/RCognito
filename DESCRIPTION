@@ -1,13 +1,13 @@
 Package: RCognito
 Type: Package
-Title: A Simplified Interface for Amazon Cognito
+Title: A Simplified Interface for 'Amazon Cognito'
 Version: 0.1.0
 Authors@R: person(given = c("Sanjaya", "J"),
                   family = "Shetty",
                   role = c("aut", "cre"),
                   email = "shettysanjaya01@gmail.com")
 Maintainer: Sanjaya J Shetty <shettysanjaya01@gmail.com>
-Description: Simplifies integration with Amazon Cognito for R developers, enabling easy management of user authentication, registration, and password flows.
+Description: Simplifies integration with 'Amazon Cognito' (<https://aws.amazon.com/cognito/>) for R developers, enabling easy management of user authentication, registration, and password flows.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
