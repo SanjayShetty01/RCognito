@@ -16,7 +16,8 @@ testthat::test_that("sign_in function works with mocked AWS Cognito response", {
     }
   ))
 
-  mockery::stub(sign_in, "paws::cognitoidentityprovider", mock_cognito)
+  mockery::stub(sign_in, "paws.security.identity::cognitoidentityprovider",
+                mock_cognito)
 
   result <- sign_in(
     client_id = "mock_client_id",
@@ -41,7 +42,8 @@ testthat::test_that("sign_in function handles failure with mocked
     }
   ))
 
-  mockery::stub(sign_in, "paws::cognitoidentityprovider", mock_cognito)
+  mockery::stub(sign_in, "paws.security.identity::cognitoidentityprovider",
+                mock_cognito)
 
   testthat::expect_error(
     sign_in(
