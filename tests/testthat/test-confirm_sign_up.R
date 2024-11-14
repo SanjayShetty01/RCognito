@@ -19,7 +19,7 @@ testthat::test_that("confirm_sign_up_user function works with mocked AWS
   ), cycle = TRUE)
 
   mockery::stub(confirm_sign_up_user,
-                "paws::cognitoidentityprovider",
+                "paws.security.identity::cognitoidentityprovider",
                 mock_cognito)
 
  testthat::expect_message(

@@ -2,7 +2,7 @@
 #'
 #' This function confirms the sign-up process for a user in AWS Cognito.
 #'
-#' @import paws
+#' @import paws.security.identity
 #'
 #' @param client_id A character string representing the app client ID.
 #' @param userpool A character string representing the user pool ID.
@@ -17,7 +17,7 @@ confirm_sign_up_user <- function(client_id,
                             username,
                             verification_code) {
   tryCatch({
-    cognito <- paws::cognitoidentityprovider()
+    cognito <- paws.security.identity::cognitoidentityprovider()
 
     users_info_from_cognito <- get_user_list_from_cognito(cognito_client =
                                                             cognito, userpool =

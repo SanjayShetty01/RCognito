@@ -15,7 +15,7 @@ testthat::test_that("sign_up_user function works with mocked AWS Cognito respons
     }
 ))
 
-mockery::stub(sign_up_user, "paws::cognitoidentityprovider", mock_cognito)
+mockery::stub(sign_up_user, "paws.security.identity::cognitoidentityprovider", mock_cognito)
 
 result <- sign_up_user(
   client_id = "mock_client_id",
