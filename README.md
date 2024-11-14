@@ -7,10 +7,11 @@ RCognito is an R package designed to simplify interaction with Amazon Cognito se
 You can install the `RCognito` package directly from GitHub using the `remotes` package:
 
 ```r
-# Install remotes package if not already installed
-install.packages("remotes")
+# Install RCognito from CRAN
+install.packages("RCognito")
 
 # Install RCognito from GitHub
+install.packages("remotes")
 remotes::install_github("SanjayShetty01/RCognito")
 ```
 
