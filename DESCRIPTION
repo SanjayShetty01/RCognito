@@ -7,6 +7,7 @@ Authors@R: person(given = c("Sanjaya", "J"),
                   role = c("aut", "cre"),
                   email = "shettysanjaya01@gmail.com")
 Maintainer: Sanjaya J Shetty <shettysanjaya01@gmail.com>
+BugReports: https://github.com/SanjayShetty01/RCognito/issues
 Description: Simplifies integration with 'Amazon Cognito' (<https://aws.amazon.com/cognito/>) for R developers, enabling easy management of user authentication, registration, and password flows.
 License: MIT + file LICENSE
 Encoding: UTF-8
