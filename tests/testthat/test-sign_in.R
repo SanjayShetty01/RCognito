@@ -55,3 +55,15 @@ testthat::test_that("sign_in function handles failure with mocked
   )
 })
 
+testthat::test_that("sign_in rejects unsupported auth flow", {
+  testthat::expect_error(
+    sign_in(
+      client_id = "mock_client_id",
+      username = "johndoe",
+      password = "mock_password123",
+      authflow = "USER_SRP_AUTH"
+    ),
+    "'arg' should be \"USER_PASSWORD_AUTH\""
+  )
+})
+
