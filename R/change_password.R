@@ -1,6 +1,6 @@
 #' Change User Password
 #'
-#'@import paws
+#'@import paws.security.identity
 #'
 #' @param old_password A character string representing the user's current password.
 #' @param new_password A character string representing the user's new password.
@@ -12,7 +12,7 @@
 change_password <- function(old_password, new_password, token) {
 
   tryCatch({
-    cognito <-  paws::cognitoidentityprovider()
+    cognito <-  paws.security.identity::cognitoidentityprovider()
 
     cognito$change_password(PreviousPassword = old_password,
                             ProposedPassword = new_password,

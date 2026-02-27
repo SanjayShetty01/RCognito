@@ -1,6 +1,6 @@
 #' Sign up a new user to AWS Cognito
 #'
-#'@import paws
+#'@import paws.security.identity
 #'
 #' @param client_id A character string representing the app client ID.
 #' @param email A character string for the user's email address.
@@ -20,7 +20,7 @@ sign_up_user <- function(client_id, email, username, password, ...) {
 
   tryCatch({
 
-    cognito <- paws::cognitoidentityprovider()
+    cognito <- paws.security.identity::cognitoidentityprovider()
 
     sign_up_result <- cognito$sign_up(
       ClientId = client_id,

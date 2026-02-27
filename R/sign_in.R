@@ -1,6 +1,6 @@
 #' Sign in to AWS Cognito
 #'
-#'@import paws
+#'@import paws.security.identity
 #'
 #' @param client_id A character string representing the app client ID.
 #' @param username A character string for the user's username.
@@ -14,7 +14,7 @@ sign_in <- function(client_id, username, password,
                     authflow = "USER_PASSWORD_AUTH") {
   tryCatch({
 
-    cognito <- paws::cognitoidentityprovider()
+    cognito <- paws.security.identity::cognitoidentityprovider()
 
     auth_parameter <- list(USERNAME = username, PASSWORD = password)
 

@@ -1,6 +1,6 @@
 #' Initiate Forgot Password Request
 #'
-#'@import paws
+#'@import paws.security.identity
 #'
 #' @param client_id A character string representing the app client ID.
 #' @param username A character string for the user's username.
@@ -10,7 +10,7 @@
 forgot_password <- function(client_id, username) {
   tryCatch({
 
-    cognito <- paws::cognitoidentityprovider()
+    cognito <- paws.security.identity::cognitoidentityprovider()
 
     cognito$forgot_password(ClientId = client_id, Username = username)
 

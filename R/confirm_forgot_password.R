@@ -2,7 +2,7 @@
 #'
 #' This function confirms the forgot password process by setting a new password for a user.
 #'
-#'@import paws
+#'@import paws.security.identity
 #'
 #' @param client_id A character string representing the app client ID.
 #' @param username A character string for the user's username.
@@ -15,7 +15,7 @@
 confirm_forgot_password <- function(client_id, username, confirmation_code, new_password) {
   tryCatch({
 
-    cognito <- paws::cognitoidentityprovider()
+    cognito <- paws.security.identity::cognitoidentityprovider()
 
     cognito$confirm_forgot_password(
       ClientId = client_id,
