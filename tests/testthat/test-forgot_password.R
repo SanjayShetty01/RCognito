@@ -14,7 +14,7 @@ testthat::test_that("forgot_password succeeds with mocked AWS Cognito response",
     }
   ))
 
-  mockery::stub(forgot_password, "paws::cognitoidentityprovider", mock_cognito)
+  mockery::stub(forgot_password, "paws.security.identity::cognitoidentityprovider", mock_cognito)
 
   expect_message(
     forgot_password(
@@ -32,7 +32,7 @@ testthat::test_that("forgot_password handles failure with mocked AWS Cognito res
     }
   ))
 
-  mockery::stub(forgot_password, "paws::cognitoidentityprovider", mock_cognito)
+  mockery::stub(forgot_password, "paws.security.identity::cognitoidentityprovider", mock_cognito)
 
   expect_error(
     forgot_password(

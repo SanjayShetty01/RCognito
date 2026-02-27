@@ -37,7 +37,7 @@ testthat::test_that("sign_up_user handles failure with mocked AWS Cognito respon
     }
   ))
 
-  mockery::stub(sign_up_user, "paws::cognitoidentityprovider", mock_cognito)
+  mockery::stub(sign_up_user, "paws.security.identity::cognitoidentityprovider", mock_cognito)
 
   testthat::expect_error(
     sign_up_user(
