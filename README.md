@@ -1,6 +1,7 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/RCognito)](https://CRAN.R-project.org/package=RCognito)
 [![Downloads](https://cranlogs.r-pkg.org/badges/RCognito)](https://cran.r-project.org/package=RCognito)
 [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/RCognito)](https://cran.r-project.org/package=RCognito)
+[![Codecov test coverage](https://codecov.io/gh/SanjayShetty01/RCognito/graph/badge.svg)](https://app.codecov.io/gh/SanjayShetty01/RCognito)
 
 # RCognito
 
