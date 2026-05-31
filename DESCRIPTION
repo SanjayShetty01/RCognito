@@ -2,6 +2,7 @@ Package: RCognito
 Type: Package
 Title: A Simplified Interface for 'Amazon Cognito'
 Version: 0.2.0
+Depends: R (>= 4.1.0)
 Authors@R: person(given = c("Sanjaya", "J"),
                   family = "Shetty",
                   role = c("aut", "cre"),
