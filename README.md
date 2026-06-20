@@ -3,7 +3,7 @@
 [![Total Downloads](https://cranlogs.r-pkg.org/badges/grand-total/RCognito)](https://cran.r-project.org/package=RCognito)
 [![Codecov test coverage](https://codecov.io/gh/SanjayShetty01/RCognito/graph/badge.svg)](https://app.codecov.io/gh/SanjayShetty01/RCognito)
 
-# RCognito
+# RCognito <img src="man/figures/logo.png" align="right" height="139" alt="" />
 
 RCognito is an R package designed to simplify interaction with Amazon Cognito services through a user-friendly API wrapper. Seamlessly authenticate users, manage user pools, and perform common Cognito operations in R. Empower your R applications with secure and scalable identity management using Rcognito.
 
