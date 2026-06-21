@@ -13,7 +13,7 @@ sign_in(client_id, username, password, authflow = "USER_PASSWORD_AUTH")
 
 \item{password}{A character string for the user's password.}
 
-\item{authflow}{A character string specifying the authentication flow (default: "USER_PASSWORD_AUTH").}
+\item{authflow}{Authentication flow type. Only "USER_PASSWORD_AUTH" is currently supported.}
 }
 \value{
 A list with user information and tokens if successful; throws an error otherwise.
